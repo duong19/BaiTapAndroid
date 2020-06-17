@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/text_view_mssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:text="MSSV : "
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_mssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/text_view_mssv"
+        android:text="20173064"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_view_hoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/text_view_mssv"
+        android:text="Họ và tên : "
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_hoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/text_view_hoTen"
+        android:layout_below="@+id/text_view_mssv"
+        android:text="Nguyễn Lý Thái Dương"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_view_ngaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/text_view_hoTen"
+        android:text="Ngày Sinh : "
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_ngaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/text_view_ngaySinh"
+        android:layout_below="@+id/text_view_hoTen"
+        android:text="30/11/1999"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@+id/text_view_ngaySinh"
+        android:text="Email : "
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/text_view_email"
+        android:layout_below="@+id/text_view_ngaySinh"
+        android:text="duong30119@gmail.com"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_view_queQuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/text_view_email"
+        android:text="Quê quán : "
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_queQuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/text_view_queQuan"
+        android:layout_below="@+id/text_view_email"
+        android:text="Hạ Long"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_delete"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/text_view_mssv"
+        android:src="@drawable/ic_edit" />
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_view_mssv"
+        android:src="@drawable/ic_delete"/>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa thông tin sinh viên"
+        android:textSize="32sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/text_mssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã số sinh viên : "
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/edit_hoTen"/>
+    <EditText
+        android:id="@+id/edit_mssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_mssv"
+        android:layout_marginLeft="12dp"
+        android:maxLength="9"
+        android:inputType="number"
+        android:hint="MSSV"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_hoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ Tên : "
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/text_content"/>
+    <EditText
+        android:id="@+id/edit_hoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_hoTen"
+        android:layout_marginLeft="12dp"
+        android:hint="name"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_ngaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày Sinh : "
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/edit_mssv"/>
+    <EditText
+        android:id="@+id/edit_ngaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_ngaySinh"
+        android:layout_marginLeft="12dp"
+        android:inputType="date"
+        android:hint="dd/mm/yyyy"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_marginTop="12sp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/edit_ngaySinh"/>
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_email"
+        android:layout_marginLeft="12dp"
+        android:hint="abc@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_queQuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quê Quán : "
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/edit_email"/>
+    <EditText
+        android:id="@+id/edit_queQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_queQuan"
+        android:layout_marginLeft="12dp"
+        android:hint="address"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_queQuan"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/btn_cancel"
+        android:text="Save"
+        android:textSize="12sp"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_queQuan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Cancel"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
